@@ -1,0 +1,11 @@
+package com.repopilot.git;
+
+public enum TargetMappingStatus {
+    EXACT,
+    AMBIGUOUS,
+    FILE_LEVEL_CHANGE,
+    UNSUPPORTED_LANGUAGE,
+    BASE_REVISION_UNVERIFIED,
+    HEAD_REVISION_UNVERIFIED,
+    SOURCE_CONTENT_MISMATCH
+}

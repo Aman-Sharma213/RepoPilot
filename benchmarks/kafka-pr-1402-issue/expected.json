@@ -1,0 +1,17 @@
+{
+  "name": "kafka-pr-1402-issue",
+  "sourceUrl": "https://github.com/apache/kafka/pull/1402",
+  "description": "Catch Throwable when a source task commitRecord callback fails and keep processing records",
+  "expectedTopFiles": [
+    "src/main/java/org/apache/kafka/connect/runtime/WorkerSourceTask.java",
+    "src/test/java/org/apache/kafka/connect/runtime/WorkerSourceTaskTest.java"
+  ],
+  "topK": 5,
+  "targets": ["org.apache.kafka.connect.runtime.WorkerSourceTask#commitTaskRecord(SourceRecord)"],
+  "expectedAffected": [
+    "org.apache.kafka.connect.runtime.WorkerSourceTask#sendRecords()",
+    "org.apache.kafka.connect.runtime.WorkerSourceTask#execute()",
+    "org.apache.kafka.connect.runtime.WorkerSourceTaskTest#testCommitRecordFailure()"
+  ],
+  "maxRadius": 3
+}

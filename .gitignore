@@ -1,0 +1,6 @@
+target/
+.repo-pilot/
+*.class
+*.log
+.idea/
+.vscode/

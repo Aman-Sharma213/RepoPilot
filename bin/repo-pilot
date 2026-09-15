@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Launcher for the packaged Repo Pilot jar.
+# --enable-native-access silences the JDK 24+ warning about Tree-sitter's native library.
+set -euo pipefail
+JAR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)/target/repo-pilot.jar"
+if [[ ! -f "$JAR" ]]; then
+  echo "repo-pilot.jar not found. Build it first: mvn package" >&2
+  exit 1
+fi
+exec java --enable-native-access=ALL-UNNAMED -jar "$JAR" "$@"

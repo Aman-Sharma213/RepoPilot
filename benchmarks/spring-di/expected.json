@@ -1,0 +1,6 @@
+{
+  "name": "spring-di",
+  "targets": ["bench.Impl#doWork()"],
+  "expectedAffected": ["bench.Api#doWork()", "bench.Consumer#run()"],
+  "maxRadius": 3
+}

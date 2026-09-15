@@ -1,0 +1,6 @@
+{
+  "name": "overload",
+  "targets": ["bench.Over#take(int)"],
+  "expectedAffected": ["bench.Caller#callInt()"],
+  "maxRadius": 3
+}

@@ -1,0 +1,6 @@
+{
+  "name": "simple-call",
+  "targets": ["bench.A#foo()"],
+  "expectedAffected": ["bench.B#bar()", "bench.C#baz()"],
+  "maxRadius": 3
+}

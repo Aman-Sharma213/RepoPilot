@@ -1,0 +1,6 @@
+{
+  "name": "interface",
+  "targets": ["bench.Handler#handle()"],
+  "expectedAffected": ["bench.FileHandler#handle()", "bench.Dispatcher#dispatch()"],
+  "maxRadius": 3
+}

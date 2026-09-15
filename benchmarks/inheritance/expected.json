@@ -1,0 +1,6 @@
+{
+  "name": "inheritance",
+  "targets": ["bench.Base#process()"],
+  "expectedAffected": ["bench.Child#process()", "bench.Client#run()"],
+  "maxRadius": 3
+}
