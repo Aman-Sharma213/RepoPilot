@@ -10,10 +10,12 @@ import com.repopilot.scan.RepositoryScanner;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
 class SecurityTest {
 
@@ -34,7 +36,8 @@ class SecurityTest {
         Files.writeString(root.resolve("src/Ok.java"), "class Ok {}");
         try {
             Files.createSymbolicLink(root.resolve("src/escape"), outside);
-        } catch (UnsupportedOperationException e) {
+        } catch (UnsupportedOperationException | IOException | SecurityException e) {
+            assumeTrue(false, () -> "Symbolic links are unavailable in this environment: " + e.getMessage());
             return;
         }
         Repository repository = new RepositoryScanner().scan(root);
