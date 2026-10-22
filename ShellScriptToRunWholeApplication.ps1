@@ -230,7 +230,7 @@ try {
         --org $Owner `
         --repo $RepoName `
         --pr $Pr `
-        --radius 1
+        --radius 2
 
     # --------------------------------------------------------
     # Finished
