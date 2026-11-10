@@ -12,9 +12,10 @@ points for an issue-based contribution.
 This demo shows how RepoPilot initializes its workspace and indexes
 the Jenkins codebase.
 
-**Commands demonstrated:** `init`, `index`
+**Commands demonstrated:** `init`, `index`, `plan` for one of the real issue
 
-**Video:** [JenkinsDemo.mp4](../../JenkinsDemo.mp4)
+**Video:** <img width="400" height="212" alt="JenkinWithGroq2" src="https://github.com/user-attachments/assets/818fc6ab-848d-4660-bf3a-a2d0b2704ef4" />
+
 
 ### 2. Pull Request Impact Analysis
 
@@ -23,8 +24,10 @@ inspect changed files, and explore potential impact.
 
 **Command demonstrated:** `pr`
 
-**Video:** [Jenkins-PR-RepoPillot-1.mp4](../../../Videos/Captures/Jenkins-PR-RepoPillot-1.mp4)
-[Jenkins-PR-ByRepoPilot2.mp4](../../../Videos/Captures/Jenkins-PR-ByRepoPilot2.mp4)
+**Video:** <img width="194" height="102" alt="Adobe Express - Jenkins-PR-RepoPillot-1" src="https://github.com/user-attachments/assets/8639d1e9-c3a6-413e-8064-694ef195a3e5" />
+
+<img width="186" height="160" alt="Adobe Express - Jenkins-PR-ByRepoPilot2" src="https://github.com/user-attachments/assets/8858592d-2085-4c30-a743-eaf99ad70e34" />
+
 
 > In the recorded run, the PR head revision could not be verified.
 > The output therefore provides file-level change evidence, rather
@@ -42,8 +45,8 @@ RepoPilot to identify candidate code locations to investigate.
 ### 4. BYOK Groq API usage , just for plan making (codebase never been handed over to the LLM )
 
 **Demo Video** 
-[JenkinWithGroq.mp4](../../../Videos/Captures/JenkinWithGroq.mp4)
-[JenkinWithGroq2.mp4](../../../Videos/Captures/JenkinWithGroq2.mp4)
+<img width="400" height="212" alt="JenkinWithGroq2" src="https://github.com/user-attachments/assets/ba3b6dd7-9a69-4c9e-9e69-64bd02cc4f1e" />
+
 
 > This recording uses optional Groq-assisted ranking. RepoPilot also
 > supports local planning without an LLM.
