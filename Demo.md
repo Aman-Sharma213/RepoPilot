@@ -14,7 +14,9 @@ the Jenkins codebase.
 
 **Commands demonstrated:** `init`, `index`, `plan` for one of the real issue
 
-**Video:** <img width="400" height="212" alt="JenkinWithGroq2" src="https://github.com/user-attachments/assets/818fc6ab-848d-4660-bf3a-a2d0b2704ef4" />
+**Video:** 
+
+https://github.com/user-attachments/assets/89d10791-95f3-4ae7-b5e9-e40f147038f1
 
 
 ### 2. Pull Request Impact Analysis
